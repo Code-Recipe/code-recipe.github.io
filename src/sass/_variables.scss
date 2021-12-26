@@ -1,0 +1,34 @@
+
+$grey: #F4F5F5;
+$semi-dark-grey: #6F6F6F;
+$dark-grey: #585858;
+$grey-text: #7A7979;
+$light-blue: #5BC0DE;
+$dark-blue: #428BCA;
+$dark-blue-border: #357EBD;
+$success-color: #5CB85C;
+$success-border-color: #4CAE4C;
+
+// Body
+$body-bg: $grey;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border-color: $laravel-border-color;
+
+$card-border-color: $laravel-border-color;
+
+// Brands
+/* $primary: #428BCA;
+$info: #8eb4cb;
+$success: #2ab27b;
+$warning: #cbb956;
+$danger: #bf5329; */
+
+// Typography
+$font-family-sans-serif: "PingFangSC", "Microsoft YaHei", "SimHei", sans-serif;
+$text-color: #636b6f;
+
+// Inputs
+$input-border-color: lighten($text-color, 40%);
+$input-placeholder-color: lighten($text-color, 30%);

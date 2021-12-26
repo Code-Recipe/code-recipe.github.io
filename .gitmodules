@@ -1,0 +1,24 @@
+[submodule "AP_Reference_Sheet"]
+	path = docs/AP_Reference_Sheet
+	url = git@github.com:Code-Recipe/AP_Reference_Sheet.git
+[submodule "Programming_Beginning"]
+	path = docs/Programming_Beginning
+	url = git@github.com:Code-Recipe/Programming_Beginning.git
+[submodule "Java_Algorithm_Basics"]
+	path = docs/Java_Algorithm_Basics
+	url = git@github.com:Code-Recipe/Java_Algorithm_Basics.git
+[submodule "Java_Beginning"]
+	path = docs/Java_Beginning
+	url = git@github.com:Code-Recipe/Java_Beginning.git
+[submodule "Java_Array_and_ArrayList"]
+	path = docs/Java_Array_and_ArrayList
+	url = git@github.com:Code-Recipe/Java_Array_and_ArrayList.git
+[submodule "Python_Object-oriented_Programming"]
+	path = docs/Python_Object-oriented_Programming
+	url = git@github.com:Code-Recipe/Python_Object-oriented_Programming.git
+[submodule "Python_Beginning"]
+	path = docs/Python_Beginning
+	url = git@github.com:Code-Recipe/Python_Beginning.git
+[submodule "Java_Object-oriented_Programming"]
+	path = docs/Java_Object-oriented_Programming
+	url = git@github.com:Code-Recipe/Java_Object-oriented_Programming.git

@@ -1,0 +1,41 @@
+{
+  "name": "code-recipe",
+  "version": "1.0.0",
+  "author": "Tony Lian <1040424979@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode development",
+    "prod": "webpack --mode production",
+    "serve": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "analyzer": "^1.2.1",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap-vue": "^2.21.2",
+    "html-to-markdown": "^1.0.0",
+    "popper.js": "^1.16.1",
+    "showdown": "https://github.com/TonyLianLong/showdown/archive/1.8.6.tar.gz",
+    "showdown-xss-filter": "https://github.com/TonyLianLong/showdown-xss-filter/archive/0.2.2.tar.gz",
+    "url-join": "^4.0.1",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3"
+  }
+}

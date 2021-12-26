@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Code Recipe - 程谱 零基础起步的免费交互式教科书平台</title>
+    <meta name="keywords" content="程谱,Code,Recipe,编程,零基础,学习" />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.0/lib/codemirror.js" integrity="sha256-HejiPVKH3r6nK6tL0EAHt8Uo6e+MR3XbA4bexhgoSZw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.0/mode/python/python.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.0/mode/clike/clike.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.0/lib/codemirror.css" integrity="sha256-t9TE0PthBS8UZZFoKXwoTJOi4So9LpHIOAZ18QFTF80=" crossorigin="anonymous">
+    <textarea id="code"></textarea>
+    
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const codePlace = document.getElementById("code");
+    const modeTable = {
+      "python": "python",
+      "java": "text/x-java"
+    };
+    $("#code").val(urlParams.get('code'));
+    var editor = CodeMirror.fromTextArea(codePlace, {
+      lineNumbers: true,
+      matchBrackets: true,
+      mode: modeTable[urlParams.get('lang')] || modeTable[urlParams.get('language')] || urlParams.get('lang') || modeTable[urlParams.get('language')]
+    });
+  </script>
+  </body>
+</html>

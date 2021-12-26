@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Code Recipe - 程谱 零基础起步的免费交互式教科书平台</title>
+    <meta name="keywords" content="程谱,Code,Recipe,编程,零基础,学习" />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <div id="app">
+      <navbar></navbar>
+      <div class="column-layout container-fluid">
+        <div class="row justify-content-center">
+          <div class="col col-4 col-lg-4 col-xl-4">
+            <contents guest :repo-url='repoURL' :src-url='srcURL' 
+              :display-chapter-index='displayChapterIndex'
+              :course-name='course.course_name' :content='course.content' ref='contents'></contents>
+            <!-- Point people to the repository for author information -->
+            <!-- <author title="作者的位置" :author="author"></author> -->
+          </div>
+          <div class="col col-12 col-lg-8 col-xl-7">
+            <learn guest :repo-url='repoURL' :src-url='srcURL' :display-chapter-index='displayChapterIndex'
+              :course='course' :bookmarks='{}'
+              v-on:content-loaded="onContentLoaded" :content='course.content'
+              >
+            </learn>
+          </div>
+        </div>
+      </div>
+    </div>
+   <script src="/main.js"></script>
+  </body>
+</html>
